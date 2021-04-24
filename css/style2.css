@@ -63,9 +63,16 @@ body {
   list-style: none;
 }
 
-/*============= TWO COLUMN SECTION =============*/
-
-
+/*============= FIVE COLUMN SECTION =============*/
+.btn-primary{
+  background-color:  #d7baee;
+  border: .05rem solid  #d7baee;
+}
+.btn-primary:hover,
+.btn-primary:focus{
+  background-color: #68a0d2!important;
+  border: .05rem solid #68a0d2!important;
+}
 
 /*============= FOOTER =============*/
 
