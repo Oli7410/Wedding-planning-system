@@ -64,8 +64,69 @@ body {
 }
 
 /*============= TWO COLUMN SECTION =============*/
+.btn-primary{
+  background-color:  #f1b1e9;
+  border: .05rem solid  #f1b1e9;
+}
+.btn-primary:hover,
+.btn-primary:focus{
+  background-color: #68a0d2!important;
+  border: .05rem solid #68a0d2!important;
+}
+.btn-danger{
+  background-color: #49b5c4;
+  border: .05rem solid #49b5c4;
+}
+.btn-danger:hover,
+.btn-danger:focus{
+  background-color: #68a0d2!important;
+  border: .05rem solid #68a0d2!important;
+}
 
 
+/*============= STAR RATING =============*/
+
+.rating>input {
+  display: none
+}
+
+.rating>label {
+  position: relative;
+  width: 1em;
+  font-size: 2vw;
+  color: #f1b1e9;
+  cursor: pointer
+}
+
+.rating>label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+  opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+  opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+  opacity: 0.4
+}
+
+/*-- MODAL --*/
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #49b5c4;
+}
 
 /*============= FOOTER =============*/
 
@@ -97,6 +158,19 @@ footer .svg-inline--fa{
 }
 footer .svg-inline--fa:hover{
   color: #68a0d2;
+}
+.page-link {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #68a0d2;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+.page-link:hover {
+  background-color: #b1d5f5;
 }
 
 /*============= SOCKET =============*/

@@ -12,15 +12,20 @@
 	<link rel="stylesheet" href="css/style1.css">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 	<!-- Top Bar -->
 	<div class="top-bar">
-		<div class="container">
-			<div class="col-12 text-right">
-				<p><a href="tel:+86241111">Paskambinkite mums jau dabar!</a></p>
-			</div>
+		<div class="col-12 text-right">
+			<button type="button"  data-toggle="modal" data-target="#modal2" class="btn btn-primary">
+				Prisijungti</button>
+			<button type="button"  data-toggle="modal" data-target="#modal3" class="btn btn-primary">
+				Registruotis</button>
+			<button type="button"  data-toggle="modal" data-target="#modal4" class="btn btn-primary">
+				<i class="fas fa-user-circle"></i></button>
+			<a href="#" class="btn btn-primary"><i class="fas fa-copy"></i></a>
 		</div>
 	</div>
 
@@ -48,7 +53,7 @@
 						<li class="list"><span class="icon"><i class="fas fa-camera" aria-hidden="true"></i></span>
 							<a class="text" href="index_photo.html"> Fotografai</a></li>
 						<li class="list"><span class="icon"><i class="fas fa-glass-cheers"></i></span>
-							<a class="text" href="#"> Maisto tiekėjai</a></li>
+							<a class="text" href="index_catering.html"> Maisto tiekėjai</a></li>
 						<li class="list"><span class="icon"><i class="far fa-sun"></i></span>
 							<a class="text" href="index_florists.html"> Floristai</a></li>
 				</ul>
@@ -56,7 +61,7 @@
 			</li>
 			<li class="nav-item"><a href="" class="nav-link">Paslaugos</a></li>
 			<li class="nav-item"><a href="" class="nav-link">Forumas</a></li>
-			<li class="nav-item"><a href="" class="nav-link">Kontaktai</a></li>
+			<li class="nav-item"><a href="index_contacts.html" class="nav-link">Kontaktai</a></li>
 		</ul>
 	</div>
 	</div>
@@ -80,7 +85,7 @@
 								<h1>Tavo laikas</h1>
 								<div class="border-top border-primary w-50 mx-auto my-3"></div>
 								<h3 class="pb-3">Vestuvių planavimo paslaugos</h3>
-								<a href="#" class="btn btn-danger btn-lg mr-2">Daugiau informacijos</a>
+								<a href="index_contacts.html" class="btn btn-danger btn-lg mr-2">Daugiau informacijos</a>
 								<a href="#" class="btn btn-primary btn-lg ml-2">Noriu planuoti</a>
 							</div>
 						</div>
@@ -102,7 +107,7 @@
 								<p class="lead pb-3">Dar neapsisprendei, kur nori švęsti vestuves?! 
 									Patikrink mūsų paruoštą restoranų sąrašą.
 								</p>
-								<a href="#" class="btn btn-viol btn-lg">Vietos vestuvėms</a>
+								<a href="index_catering.html" class="btn btn-viol btn-lg">Vietos vestuvėms</a>
 							</div>
 						</div>
 					</div>
@@ -170,6 +175,7 @@
 	<p class="lead">Apačioje pateikti svarbiausi vestuvių akcentai, išsirinkite tinkamiausią jūsų vestuvėms jau dabar</p>
 </div>
 
+
 	<!-- Three Column Section -->
 <div class="container">
 	<div class="row my-5">
@@ -186,7 +192,7 @@
 			<img src="img/Cake.jfif" alt="" class="w-100">
 			<h4 class="my-4">Vaišės</h4>
 			<p>Restoranai pasirengę paruošti vaišęs bei priimti svečius gražiausiose Lietuvos vietose...</p>
-			<a href="#" class="btn btn-outline-dark btn-md">Resroranų bei vilų sąrašas</a>
+			<a href="index_catering.html" class="btn btn-outline-dark btn-md">Resroranų bei vilų sąrašas</a>
 		</div>
 
 		<div class="col-md-4 my-4">
@@ -200,6 +206,107 @@
 	</div>
 </div>
 	<!-- End Three Column Section -->
+
+ <!-- Modal Popup -->
+ <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Vartotojo registracija</h5>
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" ><i class="fas fa-times"></i></button>
+		</div>
+		<div class="modal-body">
+		  <form>
+			<div class="mb-3">
+			  <label for="recipient-name" class="col-form-label"><i class="fas fa-user-edit"></i> Vardas ir pavardė:</label>
+			  <input type="text" class="form-control" id="recipient-name" placeholder="Vardas Pavarde">
+			</div>
+			<div class="mb-3">
+				<label for="recipient-name" class="col-form-label"><i class="fas fa-phone"></i> Telefono numeris:</label>
+				<input type="text" class="form-control" id="recipient-name" placeholder="+370******">
+			  </div>
+			  <div class="mb-3">
+				<label for="recipient-name" class="col-form-label"><i class="fas fa-envelope"></i> El. paštas:</label>
+				<input type="text" class="form-control" id="recipient-name" placeholder="vardas@pavyzdys.com">
+			  </div>
+			  <div class="mb-3">
+				<label for="recipient-name" class="col-form-label"><i class="fas fa-calendar-check"></i> Vestuvių data:</label>
+				<input type="text" class="form-control" id="recipient-name" placeholder="20**-**-**">
+			  </div>
+		  </form>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal1">Atšaukti</button>
+		  <button type="button" class="btn btn-primary">Sukurti profilį</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="text-center">
+			<main class="form-signin">
+				<h1 class="mt-5 h3 mb-3 fw-normal">Prisijungimas</h1>
+				<div class="form-floating">
+				  <input type="email" class="form-control" id="floatingInput" placeholder="vardas@pavyzdys.com">
+				  <label for="floatingInput">El. paštas</label>
+				</div>
+				<div class="form-floating">
+				  <input type="password" class="form-control" id="floatingPassword" placeholder="slaptažodis">
+				  <label for="floatingPassword">Slaptožodis</label>
+				</div>
+			
+				<div class="checkbox mb-3">
+				  <label>
+					<input type="checkbox" value="remember-me"> Prisiminti
+				  </label>
+				</div>
+				<button class="w-100 btn btn-lg btn-danger" type="submit">Prisijungti</button>
+				<p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+			</main>
+		</div>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+  <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Vartotojo profilis</h5>
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" ><i class="fas fa-times"></i></button>
+		</div>
+		<div class="modal-body">
+			<img src="img/profile picture.jpg" alt="John" style="width:70%">
+			<h1>Naujas vartotojas</h1>
+			<p class="title">+370******</p>
+			<p class="title">name@example.com</p>
+			<p class="title">20**-**-**</p>
+			<p>Aktyvus profilis</p>
+			<p class="title">Jūsų užsakymai:</p>
+			<p class="title">1. ...</p>
+			<p class="title">2. ...</p>
+			<button type="button" class="btn btn-secondary">Redaguoti profilį</button>
+		</div>
+		<div class="modal-footer">
+			<div class="social">
+		    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+			<a href="https://twitter.com/"target="_blank"><i class="fab fa-twitter"></i></a>
+		    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+		    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+			</div>
+		<button type="button" class="btn btn-danger">Apmokėti paslaugas</button>
+		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal1">Atsijungti</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
 
 	<!-- Start Footer -->
 <footer>

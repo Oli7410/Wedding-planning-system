@@ -65,8 +65,8 @@ body {
 
 /*============= FIVE COLUMN SECTION =============*/
 .btn-primary{
-  background-color:  #d7baee;
-  border: .05rem solid  #d7baee;
+  background-color:  #e9d060;
+  border: .05rem solid  #e9d060;
 }
 .btn-primary:hover,
 .btn-primary:focus{
@@ -93,7 +93,7 @@ body {
   position: relative;
   width: 1em;
   font-size: 2vw;
-  color: #d7baee;
+  color: #e9d060;
   cursor: pointer
 }
 
@@ -158,6 +158,7 @@ footer .svg-inline--fa{
 footer .svg-inline--fa:hover{
   color: #68a0d2;
 }
+
 .page-link {
   position: relative;
   display: block;
