@@ -65,8 +65,8 @@ body {
 
 /*============= FIVE COLUMN SECTION =============*/
 .btn-primary{
-  background-color:  #d7baee;
-  border: .05rem solid  #d7baee;
+  background-color:  #f0e8c7cc;
+  border: .05rem solid  #f0e8c7cc;
 }
 .btn-primary:hover,
 .btn-primary:focus{
@@ -83,43 +83,14 @@ body {
   border: .05rem solid #68a0d2!important;
 }
 
-/*============= STAR RATING =============*/
-
-.rating>input {
-  display: none
-}
-
-.rating>label {
-  position: relative;
-  width: 1em;
-  font-size: 2vw;
-  color: #d7baee;
-  cursor: pointer
-}
-
-.rating>label::before {
-  content: "\2605";
-  position: absolute;
-  opacity: 0
-}
-
-.rating>label:hover:before,
-.rating>label:hover~label:before {
-  opacity: 1 !important
-}
-
-.rating>input:checked~label:before {
-  opacity: 1
-}
-
-.rating:hover>input:checked~label:before {
-  opacity: 0.4
+.fw-bold {
+  font-weight: 700!important;
 }
 
 /*-- MODAL --*/
 .title {
   color: grey;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 a {
@@ -158,6 +129,7 @@ footer .svg-inline--fa{
 footer .svg-inline--fa:hover{
   color: #68a0d2;
 }
+
 .page-link {
   position: relative;
   display: block;
@@ -244,3 +216,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
   transform: translateZ(0);
   will-change: transform;
 }
+
+
+
