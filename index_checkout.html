@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Website with Bootstrap | Responsive Website Design</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Bootstrap 4.5 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style4.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="col-12 text-right">
+            <button type="button" data-toggle="modal" data-target="#modal2" class="btn btn-primary">
+                Prisijungti
+            </button>
+            <button type="button" data-toggle="modal" data-target="#modal3" class="btn btn-primary">
+                Registruotis
+            </button>
+            <button type="button" data-toggle="modal" data-target="#modal4" class="btn btn-primary">
+                <i class="fas fa-user-circle"></i>
+            </button>
+            <a href="#" class="btn btn-primary"><i class="fas fa-copy"></i></a>
+        </div>
+    </div>
+
+    <!-- End Top Bar -->
+    <!-- Navigation -->
+    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+        <div class="container">
+
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo.png"
+                     alt="Logo" title="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link
+				active">Pagrindinis puslapis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Katalogas</a>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="list">
+                                    <span class="icon"><i class="fas fa-camera" aria-hidden="true"></i></span>
+                                    <a class="text" href="index_photo.html"> Fotografai</a>
+                                </li>
+                                <li class="list">
+                                    <span class="icon"><i class="fas fa-glass-cheers"></i></span>
+                                    <a class="text" href="index_catering.html"> Maisto tiekėjai</a>
+                                </li>
+                                <li class="list">
+                                    <span class="icon"><i class="far fa-sun"></i></span>
+                                    <a class="text" href="index_florists.html"> Floristai</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link">Paslaugos</a></li>
+                    <li class="nav-item"><a href="index_forum.html" class="nav-link">Forumas</a></li>
+                    <li class="nav-item"><a href="index_contacts.html" class="nav-link">Kontaktai</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+      <p></p>
+      <p></p>
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Jūsų krepšelis</span>
+          <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Balionai</h6>
+              <small class="text-muted">"BIG" balionų komplektas.</small>
+            </div>
+            <span class="text-muted">€120</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Puokštė</h6>
+              <small class="text-muted">Pagal užsakymą sudaryta puokštė.</small>
+            </div>
+            <span class="text-muted">€80</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Fotografas</h6>
+              <small class="text-muted">Fotografas pirmai vestuvių dienai.</small>
+            </div>
+            <span class="text-muted">€500</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">Nuolaidos kodas</h6>
+              <small>NAUJAS50</small>
+            </div>
+            <span class="text-success">−€50</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Iš viso (EUR)</span>
+            <strong>€650</strong>
+          </li>
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Nuolaidos kodas">
+            <button type="submit" class="btn btn-secondary">Įvesti</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Užsakymo duomenys</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Vardas</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Laukelyje reikalingas vardas.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Pavardė</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Laukelyje reikalinga pavardė.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">El. paštas <span class="text-muted">(Nebūtinas)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="opa@pavyzdys.lt">
+              <div class="invalid-feedback">
+                Įveskite teisingą el paštą.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Adresas</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Kiemo g." required>
+              <div class="invalid-feedback">
+                Laukelyje reikalingas adresas.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Adresas 2 <span class="text-muted">(Nebūtinas)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Buto numeris">
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Šalis</label>
+              <select class="form-select" id="country" required>
+                <option value="">Pasirinkti...</option>
+                <option>Lietuva</option>
+              </select>
+              <div class="invalid-feedback">
+                Pasirinkite šalį.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">Miestas</label>
+              <select class="form-select" id="state" required>
+                <option value="">Pasirinkti...</option>
+                <option>Kaunas</option>
+              </select>
+              <div class="invalid-feedback">
+                Pasirinkite miestą.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Reikalingas zip kodas.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">Siuntimo adresas yra toks pat kaip apmokėjimo adresas</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Išsaugoti informaciją kitam kartui.</label>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Apmokėjimas</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" value="0" name="bn" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Banko kortele</label>
+            </div>
+            <div class="form-check">
+              <input id="bitcoin" name="paymentMethod" type="radio" value="1" name="bn" class="form-check-input" required>
+              <label class="form-check-label" for="bitcoin">Bitcoin</label>
+            </div>
+            <div class="form-check">
+              <input id="ethereum" name="paymentMethod" type="radio" value="2" name="bn" class="form-check-input" required>
+              <label class="form-check-label" for="ethereum">Ethereum</label>
+            </div>
+            <div class="form-check">
+              <input id="litecoin" name="paymentMethod" type="radio" value="3" name="bn" class="form-check-input" required>
+              <label class="form-check-label" for="litecoin">Litecoin</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Vardas Pavardė</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Pilnas vardas ant kortelės</small>
+              <div class="invalid-feedback">
+                Reikalingas pilnas vardas
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Kortelės numeris</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Reikalingas kortelės numeris
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Kort.data</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Reikalinga kortelės galiojimo data
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Reikalingas CVV
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Pereiti prie apmokėjimo</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+            <p></p>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="form-validation.js"></script>
+  </body>
+    </body>
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="row text-light text-center py-4 justify-content-center">
+
+                <div class="col-sm-10 col-md-8 col-lg-6">
+                    <img src="img/logo-white.png" alt="">
+                    <p>Pasidalink savo patirtimi vienoje iš socialinių tinklų platformoje</p>
+                    <ul class="social pt-3">
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Start Socket -->
+    <div class="socket text-light text-center py-3">
+        <p>&copy; <a href="" target="_blank">Vestuvių planavimo sistema</a></p>
+    </div>
+    <!-- End Socket -->
+    <!-- Script Source Files -->
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap 4.5 JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="js/all.min.js"></script>
+
+    <!-- End Script Source Files -->
+</body>
+</html>
