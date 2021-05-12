@@ -65,8 +65,8 @@ body {
 
 /*============= FIVE COLUMN SECTION =============*/
 .btn-primary{
-  background-color:  #dfbf9f;
-  border: .05rem solid  #dfbf9f;
+  background-color:  #e2b259cc;
+  border: .05rem solid  #e2b259cc;
 }
 .btn-primary:hover,
 .btn-primary:focus{
@@ -86,6 +86,7 @@ body {
 .fw-bold {
   font-weight: 700!important;
 }
+
 
 /*-- MODAL --*/
 .title {
